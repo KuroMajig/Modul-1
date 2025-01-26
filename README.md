@@ -148,3 +148,81 @@ Dengan inkremen $counter += 5, loop akan berjalan dengan kenaikan 5 (10, 15, 20,
 * while loop: Kondisi dicek sebelum eksekusi, inkremen di dalam loop.
 
 * do-while loop: Eksekusi terjadi setidaknya sekali, kondisi dicek setelah eksekusi.
+
+
+<h4>Lat1_8_312310696.php</h4>
+
+```
+<?php
+$kendaraan = [
+    "Mobil",
+    "Sepeda",
+    "Bus",
+    "Becak",
+    "Truk",
+    "Andong",
+    "Sepeda Motor"
+];
+
+echo "Data kendaraan awal:\n";
+foreach ($kendaraan as $k) {
+    echo $k . "\n";
+}
+
+sort($kendaraan);
+echo "\nData kendaraan setelah sort():\n";
+foreach ($kendaraan as $k) {
+    echo $k . "\n";
+}
+
+rsort($kendaraan);
+echo "\nData kendaraan setelah rsort():\n";
+foreach ($kendaraan as $k) {
+    echo $k . "\n";
+}
+
+$kendaraan = [
+    "Mobil",
+    "Sepeda",
+    "Bus",
+    "Becak",
+    "Truk",
+    "Andong",
+    "Sepeda Motor"
+];
+
+asort($kendaraan);
+echo "\nData kendaraan setelah asort():\n";
+foreach ($kendaraan as $key => $k) {
+    echo "[$key] => $k\n";
+}
+
+arsort($kendaraan);
+echo "\nData kendaraan setelah arsort():\n";
+foreach ($kendaraan as $key => $k) {
+    echo "[$key] => $k\n";
+}
+
+ksort($kendaraan);
+echo "\nData kendaraan setelah ksort():\n";
+foreach ($kendaraan as $key => $k) {
+    echo "[$key] => $k\n";
+}
+
+krsort($kendaraan);
+echo "\nData kendaraan setelah krsort():\n";
+foreach ($kendaraan as $key => $k) {
+    echo "[$key] => $k\n";
+}
+?>
+```
+
+terhadap array yang sudah dibuat, lalu tampilkan kembali dengan loop (perulangan), sehingga kita dapat membedakan tiap-tiap fungsi tersebut. Simpan hasil kerja dalam file Lat1_10.php, lalu simpulkan apa perbedaan dari keenam fungsi sorting tersebut diatas!
+
+Jawab: 
+
+*sort() dan rsort() mengurutkan array berdasarkan nilai (ascending dan descending), tanpa mempertahankan kunci.
+
+*asort() dan arsort() mengurutkan array berdasarkan nilai (ascending dan descending), sambil mempertahankan hubungan antara kunci dan nilai.
+
+*ksort() dan krsort() mengurutkan array berdasarkan kunci (ascending dan descending).
