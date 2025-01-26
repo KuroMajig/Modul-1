@@ -62,6 +62,7 @@ Gantikan operator “+=” dengan :
 Amati apa hasil dari operator tersebut ! lalu simpulkan.
 
 Jawab: 
+
 -= mengurangkan nilai variabel dengan angka yang ditentukan.
 
 *= mengalikan nilai variabel dengan angka yang ditentukan.
@@ -71,3 +72,46 @@ Jawab:
 %= menghitung sisa bagi dari variabel dengan angka yang ditentukan.
 
 .= menggabungkan nilai variabel sebagai string dengan nilai yang ditentukan.
+
+<h4>Lat1_5_312310696.php</h4>
+
+```
+<?php
+$my_name = "anotherguy";
+if ( $my_name == "someguy" ) {
+echo "Your name is someguy!<br />";
+}
+echo "Welcome to my homepage!";
+?>
+```
+
+Isikan variable $my_name dengan nilai yang lain dan simpulkan!
+
+Jawab: Jika $my_name bernilai "someguy", pesan dalam if akan tampil. Jika tidak, hanya pesan di luar if yang muncul.
+
+<h4>Lat1_6_312310696.php</h4>
+
+```
+<?php
+$destination = "Tokyo";
+echo "Traveling to $destination<br />";
+switch ($destination){
+case "Las Vegas":
+echo "Bring an extra $500";
+break;
+case "Amsterdam":
+echo "Bring an open mind";
+break;
+case "Egypt":
+echo "Bring 15 bottles of SPF 50 Sunscreen";
+break;
+case "Tokyo":
+echo "Bring lots of money";
+break;
+case "Caribbean Islands":
+echo "Bring a swimsuit";
+break;
+}
+?>
+```
+
