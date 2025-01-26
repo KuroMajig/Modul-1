@@ -142,9 +142,9 @@ Ganti inkremen dengan $counter += 5, apa yang terjadi? Ganti looping for dengan 
 
 Jawab:
 Dengan inkremen $counter += 5, loop akan berjalan dengan kenaikan 5 (10, 15, 20, ..., 100).
--
-for loop: Inisialisasi, kondisi pengecekan, dan inkremen terjadi dalam satu baris.
--
-while loop: Kondisi dicek sebelum eksekusi, inkremen di dalam loop.
--
-do-while loop: Eksekusi terjadi setidaknya sekali, kondisi dicek setelah eksekusi.
+
+* for loop: Inisialisasi, kondisi pengecekan, dan inkremen terjadi dalam satu baris.
+
+* while loop: Kondisi dicek sebelum eksekusi, inkremen di dalam loop.
+
+* do-while loop: Eksekusi terjadi setidaknya sekali, kondisi dicek setelah eksekusi.
