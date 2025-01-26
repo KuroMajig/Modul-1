@@ -221,8 +221,78 @@ terhadap array yang sudah dibuat, lalu tampilkan kembali dengan loop (perulangan
 
 Jawab: 
 
-*sort() dan rsort() mengurutkan array berdasarkan nilai (ascending dan descending), tanpa mempertahankan kunci.
+* sort() dan rsort() mengurutkan array berdasarkan nilai (ascending dan descending), tanpa mempertahankan kunci.
 
-*asort() dan arsort() mengurutkan array berdasarkan nilai (ascending dan descending), sambil mempertahankan hubungan antara kunci dan nilai.
+* asort() dan arsort() mengurutkan array berdasarkan nilai (ascending dan descending), sambil mempertahankan hubungan antara kunci dan nilai.
 
-*ksort() dan krsort() mengurutkan array berdasarkan kunci (ascending dan descending).
+* ksort() dan krsort() mengurutkan array berdasarkan kunci (ascending dan descending).
+
+<h4>Lat1_9_312310696.php</h4>
+
+```
+<?php
+function mySum($numX, $numY){
+$total = $numX + $numY;
+return $total;
+}
+$myNumber = 0;
+echo "Sebelum fungsi dijalankan, myNumber = ". $myNumber ."<br />";
+$myNumber = mySum(3, 4);
+echo "Setelah fungsi dijalankan, myNumber = ". $myNumber ."<br />";
+?>
+```
+
+Amati apa hasil dari kode di atas ! Lalu simpulkan.
+
+Jawab: Sebelum fungsi dijalankan, $myNumber adalah 0. Setelah fungsi dijalankan, $myNumber diperbarui menjadi 7, sesuai hasil penjumlahan 3 + 4.
+
+<h4>Lat1_10_312310696.php</h4>
+
+Buatlah sebuah fungsi untuk menyelesaikan permasalahan berikut :
+1. Perhitungan fibonacci dengan sistem rekursif, dimana inputan pada fungsi digunakan untuk menunjukkan bilangan ke sekian dari deret tersebut, simpan dalam file Lat1_9a.php.
+   
+2. Perhitungan nilai pangkat, dengan inputan x (bilangan yang akan dikuadratkan) dan inputan y(bilangan pangkat), simpan dalam file Lat1_9b.php.
+
+<h6>Lat1_9a.php</h6>
+
+```
+<?php
+function fibonacci($n)
+{
+    if ($n <= 0) {
+        return 0;
+    } elseif ($n === 1) {
+        return 1;
+    } else {
+        return fibonacci($n - 1) + fibonacci($n - 2);
+    }
+}
+$input = 10; // Bilangan ke-sekian dari deret Fibonacci
+echo "Bilangan Fibonacci ke-{$input} adalah " . fibonacci($input) . "\n";
+?>
+```
+
+<h6>Lat1_9b.php</h6>
+
+```
+<?php
+function power($x, $y)
+{
+    if ($y === 0) {
+        return 1;
+    } elseif ($y > 0) {
+        return $x * power($x, $y - 1);
+    } else {
+        return 1 / power($x, -$y);
+    }
+}
+$x = 2;
+$y = 3;
+echo "Hasil dari {$x} pangkat {$y} adalah " . power($x, $y) . "\n";
+?>
+```
+Jawab: 
+
+1. Fibonacci Rekursif: Fungsi fibonacci($n) menghitung deret Fibonacci ke-n menggunakan rekursi.
+
+2. Nilai Pangkat Rekursif: Fungsi power($x, $y) menghitung nilai pangkat x^y menggunakan rekursi.
