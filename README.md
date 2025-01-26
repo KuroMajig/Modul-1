@@ -115,3 +115,6 @@ break;
 ?>
 ```
 
+Gantikan nilai dari variable $destination dengan “Amsterdam”, apa yang terjadi? Jelaskan alur kerja dari model switch!
+
+Jawab: apabila $destination diubah menjadi "Amsterdam", outputnya adalah "Traveling to Amsterdam" dan "Bring an open mind". switch memeriksa setiap case dan menjalankan blok kode yang sesuai dengan nilai variabel.
