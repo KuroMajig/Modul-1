@@ -118,3 +118,33 @@ break;
 Gantikan nilai dari variable $destination dengan “Amsterdam”, apa yang terjadi? Jelaskan alur kerja dari model switch!
 
 Jawab: apabila $destination diubah menjadi "Amsterdam", outputnya adalah "Traveling to Amsterdam" dan "Bring an open mind". switch memeriksa setiap case dan menjalankan blok kode yang sesuai dengan nilai variabel.
+
+<h4>Lat1_7_312310696.php</h4>
+
+```
+<?php
+$brush_price = 5;
+echo "<table border=\"1\" align=\"center\">";
+echo "<tr><th>Quantity</th>";
+echo "<th>Price</th></tr>";
+for ( $counter = 10; $counter <= 100; $counter += 10) {
+echo "<tr><td>";
+echo $counter;
+echo "</td><td>";
+echo $brush_price * $counter;
+echo "</td></tr>";
+}
+echo "</table>";
+?>
+```
+
+Ganti inkremen dengan $counter += 5, apa yang terjadi? Ganti looping for dengan menggunakan while, dan do-while? Jelaskan bagaimana alur kerja dari looping for, while, dan do-while?
+
+Jawab:
+Dengan inkremen $counter += 5, loop akan berjalan dengan kenaikan 5 (10, 15, 20, ..., 100).
+-
+for loop: Inisialisasi, kondisi pengecekan, dan inkremen terjadi dalam satu baris.
+-
+while loop: Kondisi dicek sebelum eksekusi, inkremen di dalam loop.
+-
+do-while loop: Eksekusi terjadi setidaknya sekali, kondisi dicek setelah eksekusi.
