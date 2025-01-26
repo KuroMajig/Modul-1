@@ -63,7 +63,11 @@ Amati apa hasil dari operator tersebut ! lalu simpulkan.
 
 Jawab: 
 -= mengurangkan nilai variabel dengan angka yang ditentukan.
+
 *= mengalikan nilai variabel dengan angka yang ditentukan.
+
 /= membagi nilai variabel dengan angka yang ditentukan.
+
 %= menghitung sisa bagi dari variabel dengan angka yang ditentukan.
+
 .= menggabungkan nilai variabel sebagai string dengan nilai yang ditentukan.
